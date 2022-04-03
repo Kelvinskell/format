@@ -1,7 +1,7 @@
 Format is a simple file formatting tool that performs a range of operations on a given file.
-**NB:** This bash script remains a work in progress. Please do well to check back at a later time.
+**NB:** This bash script is still a work in progress. More features are being worked on. Please do well to check back at a later time. 
 
-Currently, some of its features include:
+Currently, some of the features include:
 - Covertting comma seperated words into a list
 - Convert texts to either uppercase or lowercase characters.
 
