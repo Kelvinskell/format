@@ -39,6 +39,6 @@ do
 
 		# Substitute new file into original file
 		mv $file"1" $file
-		exit
+		break
 	fi
 done
