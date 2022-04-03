@@ -1,18 +1,23 @@
 #!/bin/bash
 # Convert comma-seperated words into a list
 
-n=1
 # Read filename
-echo "Input file name"
-read file
+file=$1
+
+# Check if file meets criteria
+if $(egrep -q [a-z]+, $file)
+then
+	:
+else
+	echo -e "$file does not meet desired criteria for this action. \nExiting..."
+	exit
+fi
 
 # Initialise an infinite loop
 for (( ; ; ))
 do
-	echo $n
-	((n++))
-	# Cut each comma-separated word out of the file
-	# Delete commas from the file, one after the other
+	# Cut each comma-separated word out of the file and pass to variable 'cut'
+	# Delete commas from the original file, one after the other 
 	cut=`cut -d ',' -f1 $file`
         sed -i "s/\,//" $file
 
@@ -28,13 +33,12 @@ do
 	# Conditional to check if file is empty
 	if [ -s $file ]
 	then
-		echo "Not done"
+		:
 	else
-		echo "done"
+		echo "Task Complete!"
 
 		# Substitute new file into original file
 		mv $file"1" $file
 		exit
 	fi
 done
-
