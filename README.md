@@ -1,4 +1,9 @@
-This is a very short bash script that takes comma-separated words in a file and converts them into a list. 
+Format is a simple file formatting tool that performs a range of operations on a given file.
+**NB:** This bash script remains a work in progress. Please do well to check back at a later time.
+
+Currently, some of its features include:
+- Covertting comma seperated words into a list
+- Convert texts to either uppercase or lowercase characters.
 
 ### How to use
 
