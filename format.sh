@@ -20,11 +20,11 @@ select opt in 'Convert comma seperated words into a list' 'Convert texts to uppe
 do
 	if [[ $REPLY == 1 ]]
 	then
-		bash dependencies/comma.sh $file
+		bash scripts/comma.sh $file
 		exit 0
 	elif [[ $REPLY == 2 ]]
 	then
-		bash dependencies/case.sh $file
+		bash scripts/case.sh $file
 		exit 0
 	else
 		echo -e "You selected a wrong option. \nTry again."
