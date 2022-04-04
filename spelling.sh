@@ -26,7 +26,7 @@ n=0
 
 for word in ${new_array1[@]}
 do
-	if grep -qE "(^| )$word( |\$)" /usr/share/dict/american-english||grep -qE "(^| )$word( m|\$)" /usr/share/british-english
+	if grep -qE "(^| )$word( |\$)" /usr/share/dict/american-english||grep -qE "(^| )$word( |\$)" /usr/share/british-english
 	then 
 		
 		continue
