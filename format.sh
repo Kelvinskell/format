@@ -26,7 +26,7 @@ select opt in 'Convert comma seperated words into a list' 'Convert texts to uppe
 do
 	if [[ $REPLY == 1 ]]
 	then
-		bash scripts/comma.sh $file
+		bash scripts/list.sh $file
 		exit 0
 	elif [[ $REPLY == 2 ]]
 	then
