@@ -2,8 +2,14 @@
 
 PS3="Select a task to perform "
 
-echo "Input filename"
-read file
+# Check for filename
+if [ $# == 0 ]
+then
+	echo "Input filename"
+	read file
+else
+	file=$1
+fi
 
 # Check if file exists
 if [[ -f $file ]]
