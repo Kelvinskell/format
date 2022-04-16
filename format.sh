@@ -16,7 +16,7 @@ else
 	exit 1 
 fi
 
-select opt in 'Convert comma seperated words into a list' 'Convert texts to upper or lower case' 'Check for spelling errors'
+select opt in 'Convert comma seperated words into a list' 'Convert texts to upper or lower case' 'Check for spelling errors' 'Manage duplicate lines'
 do
 	if [[ $REPLY == 1 ]]
 	then
@@ -29,6 +29,10 @@ do
 	elif [[ $REPLY == 3 ]]
 	then
 		bash scripts/spelling.sh $file
+		exit 0
+	elif [[ $REPLY == 4 ]]
+	then
+		bash scripts/duplicate.sh $file
 		exit 0
 	else
 		echo -e "You selected a wrong option. \nTry again."
