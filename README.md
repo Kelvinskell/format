@@ -4,6 +4,7 @@ Format is a simple file formatting tool that performs a range of operations on a
 Currently, some of the features include:
 - Covertting comma seperated words into a list
 - Convert texts to either uppercase or lowercase characters.
+- Check for spelling errors in a file
 
 ### How to use
 
